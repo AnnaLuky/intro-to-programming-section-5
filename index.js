@@ -29,7 +29,7 @@ function checkGuess() {
 
   // Get value from guess input element
   const guess = parseInt(guessInput.value, 10);
-  if (guess < 0) {
+  if (guess < 1) {
     errorMessage.style.display = '';
     errorMessage.innerHTML = 'Must be greater than 0';
   } else if (guess > 99) {
